@@ -27,13 +27,13 @@ export default function Footer() {
       </div>
 
       {/* Nội dung chính */}
-      <div className="max-w-screen-xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="max-w-screen-xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-12 gap-6 gap-y-10">
         {/* Cột trái: Logo + Thông tin công ty */}
-        <div className="md:col-span-5">
+        <div className="md:col-span-5 flex flex-col items-center md:items-start text-center md:text-left">
           <img
             src="src/assets/fahasa-logo.png"
             alt="Fahasa Logo"
-            className="mb-4 w-auto h-auto max-w-90"
+            className="mb-4 w-full max-w-xs h-16 object-contain"
           />
           <p>
             Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM <br />
@@ -46,7 +46,7 @@ export default function Footer() {
             cũng như tất cả Hệ Thống Fahasa trên toàn quốc.
           </p>
           {/* Icon mạng xã hội */}
-          <div className="flex space-x-6 mt-4 text-[2rem]">
+          <div className="flex justify-center md:justify-start space-x-6 mt-4 text-[2rem]">
             <a href="#" aria-label="Facebook">
               <FaFacebook className="text-blue-600" />
             </a>
@@ -64,7 +64,7 @@ export default function Footer() {
             </a>
           </div>
           {/* App download */}
-          <div className="flex space-x-4 mt-4 text-3xl">
+          <div className="flex justify-center md:justify-start space-x-4 mt-4 text-3xl">
             <a href="#" aria-label="Google Play">
               <SiGoogleplay className="text-green-600" />
             </a>
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         {/* Cột giữa: Dịch vụ + Liên hệ */}
-        <div className="md:col-span-3">
+        <div className="md:col-span-3 flex flex-col items-center md:items-start text-center md:text-left">
           <h3 className="font-semibold mb-2">DỊCH VỤ</h3>
           <ul className="space-y-1 text-sm">
             <li>Điều khoản sử dụng</li>
@@ -86,17 +86,19 @@ export default function Footer() {
           </ul>
           <div className="mt-4">
             <h4 className="font-semibold mb-1">LIÊN HỆ</h4>
-            <div className="flex items-center space-x-2 text-sm">
-              <FaMapMarkerAlt />
-              <span>60-62 Lê Lợi, Q.1, TP. HCM</span>
-            </div>
-            <div className="flex items-center space-x-2 text-sm mt-1">
-              <FaEnvelope />
-              <span>cskh@fahasa.com.vn</span>
-            </div>
-            <div className="flex items-center space-x-2 text-sm mt-1">
-              <FaPhone />
-              <span>1900636467</span>
+            <div className="flex flex-col gap-y-2 text-sm">
+              <div className="flex items-center justify-center md:justify-start space-x-2">
+                <FaMapMarkerAlt className="min-w-[20px]" />
+                <span>60-62 Lê Lợi, Q.1, TP. HCM</span>
+              </div>
+              <div className="flex items-center justify-center md:justify-start space-x-2">
+                <FaEnvelope className="min-w-[20px]" />
+                <span>cskh@fahasa.com.vn</span>
+              </div>
+              <div className="flex items-center justify-center md:justify-start space-x-2">
+                <FaPhone className="min-w-[20px]" />
+                <span>1900636467</span>
+              </div>
             </div>
           </div>
         </div>
@@ -104,7 +106,7 @@ export default function Footer() {
         {/* Cột phải: Hỗ trợ + Tài khoản */}
         <div className="md:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Hỗ trợ */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="font-semibold mb-2">HỖ TRỢ</h3>
             <ul className="space-y-1 text-sm">
               <li>Chính sách đổi - trả</li>
@@ -113,13 +115,13 @@ export default function Footer() {
               <li>Chính sách khách sỉ</li>
             </ul>
             {/* Đối tác vận chuyển */}
-            <div className="flex space-x-4 mt-6">
-              <img src="src/assets/shipping/lex.png" alt="Lex" className="h-12" />
-              <img src="src/assets/shipping/ninjavan.png" alt="Ninja Van" className="h-12" />
+            <div className="flex justify-center md:justify-start space-x-4 mt-6">
+              <img src="src/assets/shipping/lex.png" alt="Lex" className="h-12 object-contain" />
+              <img src="src/assets/shipping/ninjavan.png" alt="Ninja Van" className="h-12 object-contain" />
             </div>
           </div>
           {/* Tài khoản */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="font-semibold mb-2">TÀI KHOẢN CỦA TÔI</h3>
             <ul className="space-y-1 text-sm">
               <li>Đăng nhập/Tạo mới tài khoản</li>
@@ -128,11 +130,11 @@ export default function Footer() {
               <li>Lịch sử mua hàng</li>
             </ul>
             {/* Đối tác thanh toán */}
-            <div className="flex flex-wrap gap-2 mt-6">
-              <img src="src/assets/payment/vnpay.png" alt="VNPay" className="h-12" />
-              <img src="src/assets/payment/momo.png" alt="MoMo" className="h-12" />
-              <img src="src/assets/payment/shopeepay.png" alt="ShopeePay" className="h-12" />
-              <img src="src/assets/payment/zalopay.png" alt="ZaloPay" className="h-12" />
+            <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-6">
+              <img src="src/assets/payment/vnpay.png" alt="VNPay" className="h-12 object-contain" />
+              <img src="src/assets/payment/momo.png" alt="MoMo" className="h-12 object-contain" />
+              <img src="src/assets/payment/shopeepay.png" alt="ShopeePay" className="h-12 object-contain" />
+              <img src="src/assets/payment/zalopay.png" alt="ZaloPay" className="h-12 object-contain" />
             </div>
           </div>
         </div>
