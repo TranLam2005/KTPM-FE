@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-700 mt-10">
       {/* Đăng ký nhận bản tin */}
-      <div className="bg-gray-200 py-4 px-6 flex flex-col md:flex-row items-center justify-between">
+      <div className="bg-gray-200 py-4 px-6 flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto">
         <div className="flex items-center mb-2 md:mb-0">
           <span className="mr-2 text-lg">
             <i className="fa fa-envelope" />
@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
 
       {/* Nội dung chính */}
-      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="max-w-screen-xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* Cột trái: Logo + Thông tin công ty */}
         <div className="md:col-span-5">
           <img
