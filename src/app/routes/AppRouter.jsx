@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { MainLayout } from "../layout/MainLayout";
-import { LoadingPage } from "../../components/loading/LoadingPage";
-import { usePublicRouter } from "../category/sates/router";
+import { MainLayout } from "../../features/layout/MainLayout";
+import { usePublicRouter } from "../../features/category/sates/router";
 
 export const AppRouter = () => {
     const publicRouter = usePublicRouter();
@@ -12,5 +11,5 @@ export const AppRouter = () => {
             children: publicRouter
         }
     ])
-    return <RouterProvider router = {router} />;
+    return <RouterProvider router={router} />;
 }
