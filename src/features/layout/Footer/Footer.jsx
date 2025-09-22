@@ -1,5 +1,11 @@
 import React from "react";
-import { FaFacebook, FaYoutube, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaYoutube,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
 import { SiGoogleplay, SiAppstore } from "react-icons/si";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
@@ -41,8 +47,10 @@ export default function Footer() {
             60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam
           </p>
           <p className="mt-2">
-            Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi.<br />
-            <span className="font-semibold text-red-500">KHÔNG</span> hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng <br />
+            Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi.
+            <br />
+            <span className="font-semibold text-red-500">KHÔNG</span> hỗ trợ đặt
+            mua và nhận hàng trực tiếp tại văn phòng <br />
             cũng như tất cả Hệ Thống Fahasa trên toàn quốc.
           </p>
           {/* Icon mạng xã hội */}
@@ -116,8 +124,16 @@ export default function Footer() {
             </ul>
             {/* Đối tác vận chuyển */}
             <div className="flex justify-center md:justify-start space-x-4 mt-6">
-              <img src="src/assets/shipping/lex.png" alt="Lex" className="h-12 object-contain" />
-              <img src="src/assets/shipping/ninjavan.png" alt="Ninja Van" className="h-12 object-contain" />
+              <img
+                src="src/assets/shipping/lex.png"
+                alt="Lex"
+                className="h-12 object-contain"
+              />
+              <img
+                src="src/assets/shipping/ninjavan.png"
+                alt="Ninja Van"
+                className="h-12 object-contain"
+              />
             </div>
           </div>
           {/* Tài khoản */}
@@ -131,10 +147,26 @@ export default function Footer() {
             </ul>
             {/* Đối tác thanh toán */}
             <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-6">
-              <img src="src/assets/payment/vnpay.png" alt="VNPay" className="h-12 object-contain" />
-              <img src="src/assets/payment/momo.png" alt="MoMo" className="h-12 object-contain" />
-              <img src="src/assets/payment/shopeepay.png" alt="ShopeePay" className="h-12 object-contain" />
-              <img src="src/assets/payment/zalopay.png" alt="ZaloPay" className="h-12 object-contain" />
+              <img
+                src="src/assets/payment/vnpay.png"
+                alt="VNPay"
+                className="h-12 object-contain"
+              />
+              <img
+                src="src/assets/payment/momo.png"
+                alt="MoMo"
+                className="h-12 object-contain"
+              />
+              <img
+                src="src/assets/payment/shopeepay.png"
+                alt="ShopeePay"
+                className="h-12 object-contain"
+              />
+              <img
+                src="src/assets/payment/zalopay.png"
+                alt="ZaloPay"
+                className="h-12 object-contain"
+              />
             </div>
           </div>
         </div>
@@ -142,7 +174,9 @@ export default function Footer() {
 
       {/* Chứng nhận & bản quyền */}
       <div className="border-t border-gray-300 py-6 text-center text-sm">
-        Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư TP. HCM cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2025.
+        Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu
+        tư TP. HCM cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày
+        20/05/2025.
       </div>
     </footer>
   );
