@@ -1,4 +1,4 @@
-import { cn } from "../../libs/utils"
+import { cn } from "../../libs/utils";
 
 function Input({ className, type, ...props }) {
   return (
@@ -13,7 +13,7 @@ function Input({ className, type, ...props }) {
       )}
       {...props}
     />
-  )
+  );
 }
 
-export { Input }
+export { Input };

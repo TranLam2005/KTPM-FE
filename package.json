@@ -8,9 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "check": "pnpm lint:fix && pnpm format"
+    "lint:fix": "pnpm eslint . --fix",
+    "format": "prettier . --write .",
+    "format:check": "prettier . --check .",
+    "clean": "pnpm run lint:fix && pnpm run format",
+    "check": "pnpm run lint && pnpm run format:check"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -25,7 +27,6 @@
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.1",
-    "sass": "^1.92.1",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1",
     "tailwind-scrollbar": "^4.0.2"
@@ -36,10 +37,11 @@
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.33.0",
+    "eslint": "^9",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

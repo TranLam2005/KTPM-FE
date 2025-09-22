@@ -1,6 +1,8 @@
 import React from "react";
-import Footer from "../components/Footer";
-import { AppRouter } from "./routes/AppRouter";
+import Footer from "./features/layout/Footer/Footer";
+
+import { AppRouter } from "./app/routes/AppRouter";
+
 import { Toaster } from "sonner";
 
 function App() {
