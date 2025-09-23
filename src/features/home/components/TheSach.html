@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nếu biết trăm năm là hữu hạn</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9fafb;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .card {
+        background: white;
+        max-width: 400px;
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+      }
+      .main-image {
+        display: flex;
+        justify-content: center;
+      }
+      .main-image img {
+        border-radius: 8px;
+        max-width: 300px;
+        height: auto;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      }
+      .thumbnails {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+      .thumbnails img,
+      .thumbnails .more {
+        width: 60px;
+        height: 90px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .thumbnails img:hover,
+      .thumbnails .more:hover {
+        opacity: 0.8;
+      }
+      .more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #555;
+        background: #f1f1f1;
+      }
+      .actions {
+        margin-top: 20px;
+        display: flex;
+        gap: 12px;
+      }
+      .actions button {
+        flex: 1;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .btn-cart {
+        border: 2px solid #e63946;
+        color: #e63946;
+        background: white;
+      }
+      .btn-cart:hover {
+        background: #ffe6e9;
+      }
+      .btn-buy {
+        background: #e63946;
+        color: white;
+        border: none;
+      }
+      .btn-buy:hover {
+        background: #d62828;
+      }
+      .policy {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #444;
+      }
+      .policy h3 {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .policy ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .policy li {
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="main-image">
+        <img id="mainImage" src="images/book-main.jpg" alt="Sách chính" />
+      </div>
+
+      <div class="thumbnails" id="thumbnails">
+        <img
+          src="images/book-1.jpg"
+          alt="book 1"
+          onclick="changeMain(this.src)"
+        />
+        <img
+          src="images/book-2.jpg"
+          alt="book 2"
+          onclick="changeMain(this.src)"
+        />
+        <img
+          src="images/book-3.jpg"
+          alt="book 3"
+          onclick="changeMain(this.src)"
+        />
+        <img
+          src="images/book-4.jpg"
+          alt="book 4"
+          onclick="changeMain(this.src)"
+        />
+        <div class="more" onclick="showMore()">+4</div>
+      </div>
+
+      <div class="actions">
+        <button class="btn-cart">Thêm vào giỏ hàng</button>
+        <button class="btn-buy">Mua ngay</button>
+      </div>
+
+      <div class="policy">
+        <h3>Chính sách ưu đãi của Fahasa</h3>
+        <ul>
+          <li>🚚 Thời gian giao hàng: <b>Giao nhanh và uy tín</b></li>
+          <li>🔄 Chính sách đổi trả: <b>Đổi trả miễn phí toàn quốc</b></li>
+          <li>🎁 Chính sách khách sỉ: <b>Ưu đãi khi mua số lượng lớn</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function changeMain(src) {
+        document.getElementById("mainImage").src = src;
+      }
+
+      function showMore() {
+        const container = document.getElementById("thumbnails");
+        container.innerHTML = `
+        <img src="images/book-1.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-2.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-3.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-4.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-5.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-6.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-7.jpg" onclick="changeMain(this.src)" />
+        <img src="images/book-8.jpg" onclick="changeMain(this.src)" />
+      `;
+      }
+    </script>
+  </body>
+</html>
