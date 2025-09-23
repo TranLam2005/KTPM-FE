@@ -42,6 +42,5 @@ export default [
       ],
     },
   },
-  // Tắt rule ESLint có thể xung đột với Prettier
   eslintConfigPrettier,
 ];

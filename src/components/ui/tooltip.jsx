@@ -36,10 +36,25 @@ function TooltipContent({ className, sideOffset = 0, children, ...props }) {
         {...props}
       >
         {children}
-        <TooltipPrimitive.Arrow className="bg-white  fill-primary z-50 size-2.5 translate-y-[calc(-50%)_-_2px] rounded-[2px]" />
       </TooltipPrimitive.Content>
     </TooltipPrimitive.Portal>
   );
 }
 
-export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };
+function TooltipArrow({ className, ...props }) {
+  return (
+    <TooltipPrimitive.Arrow
+      data-slot="tooltip-arrow"
+      className={cn("fill-current text-primary", className)}
+      {...props}
+    />
+  );
+}
+
+export {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+  TooltipProvider,
+  TooltipArrow,
+};

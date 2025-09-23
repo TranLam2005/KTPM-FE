@@ -9,7 +9,6 @@ function App() {
   return (
     <React.Fragment>
       <AppRouter />
-      <Footer />
       <Toaster richColors position="top-right" />
     </React.Fragment>
   );
