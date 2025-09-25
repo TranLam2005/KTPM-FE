@@ -7,7 +7,7 @@ import Flashsale from "./flashsale";
 
 const FlashsaleSection = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 my-10">
+    <section className="w-full bg-[#ff6c6b] px-4">
       {/* Header Flash Sale */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-2xl font-bold text-orange-500">FLASH SALE</h2>

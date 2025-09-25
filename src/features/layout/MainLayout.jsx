@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 export const MainLayout = () => {
   return (
     <div>
-      <div className="flex flex-col w-full h-full justify-center items-center">
+      <div className="flex flex-col w-full bg-[#e8e8e8] h-full justify-center items-center">
         <Header />
         <Outlet />
         <Footer />

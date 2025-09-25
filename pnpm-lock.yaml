@@ -52,6 +52,9 @@ importers:
       sonner:
         specifier: ^2.0.7
         version: 2.0.7(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      swiper:
+        specifier: ^12.0.2
+        version: 12.0.2
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
@@ -62,9 +65,6 @@ importers:
       "@eslint/js":
         specifier: ^9.33.0
         version: 9.36.0
-      "@radix-ui/react-select":
-        specifier: ^2.2.6
-        version: 2.2.6(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       "@types/react":
         specifier: ^19.1.10
         version: 19.1.13
@@ -4143,6 +4143,13 @@ packages:
       }
     engines: { node: ">= 0.4" }
 
+  swiper@12.0.2:
+    resolution:
+      {
+        integrity: sha512-y8F6fDGXmTVVgwqJj6I00l4FdGuhpFJn0U/9Ucn1MwWOw3NdLV8aH88pZOjyhBgU/6PyBlUx+JuAQ5KMWz906Q==,
+      }
+    engines: { node: ">= 4.7.0" }
+
   synckit@0.11.11:
     resolution:
       {
@@ -7180,6 +7187,8 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  swiper@12.0.2: {}
 
   synckit@0.11.11:
     dependencies:

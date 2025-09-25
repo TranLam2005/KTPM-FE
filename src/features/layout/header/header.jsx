@@ -23,7 +23,15 @@ import { ItemSelect } from "./components/Select";
 function Header() {
   return (
     <header className="w-full h-[128px] bg-white flex flex-col">
-      <div className="w-full h-[60px]"></div>
+      <div className="w-full h-[60px] bg-[#E22C34] flex items-center justify-center">
+        <div className="w-[1230px] h-full">
+          <img
+            src="http://cdn1.fahasa.com/media/wysiwyg/Thang-09-2025/MCBooks_T9_1263x60.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
       <div className="w-full h-[68px] flex items-center justify-center">
         <div className="w-[1230px] h-full flex justify-between items-center">
           <div className="flex-1 flex items-center justify-between pr-[20px]">
