@@ -31,7 +31,7 @@ export function GroupMenu({ menuList }) {
           <li
             className={cn(
               active === index && "bg-[#F2F4F5]",
-              "p-[20px] text-left  text-[#212121] text-[16px] font-medium cursor-pointer"
+              "p-[20px] text-left  text-[#212121] text-[16px] font-medium cursor-pointer",
             )}
             key={menu.id}
             onMouseEnter={() => setAtive(index)}
@@ -45,7 +45,7 @@ export function GroupMenu({ menuList }) {
         <div
           className={cn(
             "w-[914px] h-[370px] grid absolute left-[275px] top-[75px] cursor-pointer grid-cols-3 grid-rows-2",
-            "before:content-[''] before:absolute before:left-[10px] before:top-[0px] before:h-full before:bg-black"
+            "before:content-[''] before:absolute before:left-[10px] before:top-[0px] before:h-full before:bg-black",
           )}
         >
           {menuList[active]?.children?.length ? (

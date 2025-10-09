@@ -17,7 +17,7 @@ export default function TabBooks() {
       { id: "foreign-books", label: "Foreign books" },
       { id: "the-loai-khac", label: "Thể loại khác" },
     ],
-    []
+    [],
   );
 
   const [activeTab, setActiveTab] = useState("van-hoc");
@@ -96,7 +96,7 @@ export default function TabBooks() {
           "Vợ Nhặt là truyện ngắn xuất sắc của Kim Lân, viết về nạn đói năm 1945. Tác phẩm kể về Tràng - một người nông dân nghèo 'nhặt' được vợ giữa lúc đói kém. Câu chuyện thể hiện khát vọng sống, khát vọng hạnh phúc của con người ngay trong hoàn cảnh khốn cùng.",
       },
     }),
-    []
+    [],
   );
 
   const listBooks = useMemo(
@@ -147,7 +147,7 @@ export default function TabBooks() {
         reviews: 112,
       },
     ],
-    [bookDetails]
+    [bookDetails],
   );
 
   const currentBook = bookDetails[selectedBookId];
