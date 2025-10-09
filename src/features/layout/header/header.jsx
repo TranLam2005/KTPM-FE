@@ -3,6 +3,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Link } from "react-router-dom";
 import { GroupMenu } from "./MenuGroup";
 import { menu } from "./mocks";
 import { Menu } from "../../../components/icons/Menu";

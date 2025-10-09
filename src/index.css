@@ -1,5 +1,25 @@
 @import "tailwindcss";
-.swiper-button-next,
-.swiper-button-prev {
-  color: #f97316 !important; /* màu cam */
+/* Định dạng mũi tên Swiper trong Flashsale */
+.flashsale-swiper .swiper-button-next,
+.flashsale-swiper .swiper-button-prev {
+  z-index: 20; /* giúp mũi tên nằm trên sản phẩm */
+  top: 45%; /* canh giữa theo chiều dọc */
+  width: 24px;
+  height: 24px;
+  color: #ef4444; /* màu đỏ nhạt */
+}
+
+/* Đẩy mũi tên ra ngoài một chút */
+.flashsale-swiper .swiper-button-prev {
+  left: -20px;
+}
+
+.flashsale-swiper .swiper-button-next {
+  right: -20px;
+}
+
+/* Hiệu ứng hover (chỉ đổi màu, không có nền) */
+.flashsale-swiper .swiper-button-next:hover,
+.flashsale-swiper .swiper-button-prev:hover {
+  color: #dc2626; /* đậm hơn khi hover */
 }

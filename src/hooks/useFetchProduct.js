@@ -10,7 +10,7 @@ export function useFetchProduct() {
     setError(null);
     try {
       const res = await restApi.get(
-        `/books/product/by-sku/${encodeURIComponent(sku)}`
+        `/books/product/by-sku/${encodeURIComponent(sku)}`,
       );
       return res.data;
     } catch (e) {

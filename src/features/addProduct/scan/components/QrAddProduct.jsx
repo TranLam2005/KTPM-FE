@@ -65,7 +65,7 @@ export default function QrAddProduct({ onAddToCart }) {
           video,
           (result, err) => {
             if (result) handleDecode(result.getText());
-          }
+          },
         );
         controlsRef.current = controls;
         streamRef.current = stream;

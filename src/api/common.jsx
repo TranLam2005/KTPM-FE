@@ -25,5 +25,5 @@ InstanceApi.interceptors.response.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
