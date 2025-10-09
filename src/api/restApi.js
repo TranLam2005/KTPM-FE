@@ -35,14 +35,14 @@ restApi.interceptors.response.use(
         break;
       case 409:
         toast.error(
-          "Thao tác không hợp lệ. Dữ liệu đã tồn tại hoặc có xung đột."
+          "Thao tác không hợp lệ. Dữ liệu đã tồn tại hoặc có xung đột.",
         );
         break;
       default:
         toast.error("Đã xảy ra lỗi không xác định.");
     }
     return Promise.reject(error);
-  }
+  },
 );
 
 restApi.interceptors.request.use(
@@ -55,5 +55,5 @@ restApi.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
